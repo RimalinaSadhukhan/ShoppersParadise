@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: inline;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+            color:black;
+            font-size: 20px;
+        }
+        header::before{
+            background: url('img/bg1.JPG') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 155%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            color:white;
+            text-shadow: 3px 3px  black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1><ins>WELCOME TO THE SIGN IN PAGE</ins></h1>
+    <h4>Please sign in to register for future updates</h4>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <br>Enter your full name<br>
+            <input type="text" placeholder="Full Name">
+            <br>Enter your gender<br>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+            <input type="radio" name="gender" value="other">other
+            <br>Enter your DOB<br>
+            <input type="date" name="calender">
+            <br>Enter your email address<br>
+            <input type="email" name="email" placeholder="xyz@gmail.com">
+            <br>Enter your password<br>
+            <input type="password" name="password">
+            <br>Enter your phone number<br>
+            <input type="phone number" name="phone number" placeholder="(+91)9330944955">
+            <br>Do you want to save your details?
+            <input type="checkbox" name="checkbox" value="Yes">Yes
+            <input type="checkbox" name="checkbox" value="No">No
+            <br>Choose your Preferences<br>
+            <select>
+                <option value="sofa">sofa</option>
+                <option value="dining table">dining table</option>
+                <option value="closet">closet</option>
+                <option value="study table">study table</option>
+            </select>
+            <br>Please Click on Sign In
+            <button type="button" onclick="alert('you have been successfully signed in')">Sign In
+            </button>
+        </fieldset>
+    </form>
+</header>
+</body>
+
+</html>
